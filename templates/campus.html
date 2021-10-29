@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head></head>
+        <title>Campus Creatures</title>
+        <link rel ="stylesheet" href="../static/stylesheet.css">
+        <meta name="author" content="names of both your team">
+        <!-- for mobile-friendly pages -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body>
+        <h1>Campus Creatures</h1>
+        <h2>Gathering info on Wells wildlife </h2>
+       
+        <form method="post" action="https://cs.wellesley.edu/~cs304/cgi-bin/dump.cgi">
+            <div id="checkboxes">
+            <label for = "checkboxes" class = "labeltext">Tell us about which of Wellesley's varmints you have spotted. </label>
+            <input type = "checkbox" id = "seen-elt-1" name = "seen1">
+            <label for="seen-elt-1"> squirrel</label><br>
+            <input type = "checkbox" id = "seen-elt-2" name = "seen2">
+            <label for="seen-elt-2"> goose</label><br>
+            <input type = "checkbox" id = "seen-elt-3" name = "seen3">  
+            <label for="seen-elt-3"> muscovy duck</label><br>
+            <input type = "checkbox" id = "seen-elt-4" name = "seen4">
+            <label for="seen-elt-4"> raccoon </label><br>
+            <input type = "checkbox" id = "seen-elt-5" name = "seen5">  
+            <label for="seen-elt-5"> Wendy</label> 
+            </div>
+            <div id = "selectors">
+            <label for = "cutest-elt" class="labeltext">Which animal is the cutest?</label>
+            <select name =  "cutest" id = "cutest-elt">
+                <option value = "squirrel">squirrel</option>
+                <option value = "goose">goose</option>
+                <option value = "muscovy duck">muscovy duck</option>
+                <option value = "raccoon">raccoon</option>
+                <option value = "Wendy">Wendy</option> 
+            </select>
+            <br>
+            <label for = "scariest-elt" class = "labeltext">Which animal do you fear the most?</label>
+            <select name =  "scariest" id = "scariest-elt">
+                <option value = "squirrel">squirrel</option>
+                <option value = "goose">goose</option>
+                <option value = "muscovy duck">muscovy duck</option>
+                <option value = "raccoon">raccoon</option>
+                <option value = "Wendy">Wendy</option> 
+            </select>
+            </div>
+            <br>
+        <label for = "other-elt" class = "labeltext2">Which other creatures have you seen?</label><br>
+            <textarea id="other-elt" name="textbox"></textarea> <br>
+            <label for = "submit-elt"></label>
+            <input type = "submit" id="submit-elt" value="Submit">
+
+        </form>
+        <!-- Forms needed: 
+             
+             what other creatures have you seen (textbox)
+             notes (textbox)
+             submit (submission button)
+         -->
+    </body>    
+</html>
